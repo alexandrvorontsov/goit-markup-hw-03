@@ -12,6 +12,20 @@ body {
 	background-color: #fff;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 h1,
 h2,
 h3 {
@@ -22,34 +36,36 @@ p {
 	margin: 0;
 }
 
-ul {
+ul,
+ol {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding-left: 0;
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .section-group,
 .section-teams,
 .section-portflio {
-	padding: 94px 0;
+	padding-bottom: 94px;
+	padding-top: 94px;
 }
 /* Header */
 
 .header-block {
 	border-bottom: 1px solid #ececec;
+	padding: 24px 0;
 }
 
 .header-container {
 	display: flex;
 	align-items: center;
-	padding-top: 24px;
-	padding-bottom: 24px;
 	justify-content: space-between;
 }
 
@@ -81,7 +97,6 @@ ul {
 
 .nav-list {
 	display: flex;
-	/* margin-right: 330px; */
 }
 
 .contact-list {
@@ -165,7 +180,7 @@ ul {
 	color: #ffffff;
 	text-transform: uppercase;
 	margin: 0px auto 30px auto;
-	width: 800px;
+	width: 696px;
 }
 
 /* button-title  */
@@ -203,8 +218,8 @@ ul {
 	line-height: 1.16;
 	letter-spacing: 0.03em;
 	color: #212121;
-	display: none;
 }
+
 .group-title {
 	font-weight: 700;
 	font-style: normal;
@@ -242,6 +257,7 @@ ul {
 /* Box */
 .section-box {
 	background: #ffffff;
+	padding-bottom: 94px;
 }
 
 .box-title {
@@ -250,18 +266,20 @@ ul {
 	line-height: 1.16;
 	letter-spacing: 0.03em;
 	text-align: center;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .box-link {
-	display: flexbox;
+	/* display: flexbox; */
 	/* margin-right: 30px; */
 }
 
 .box-list {
 	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 94px;
+	gap: 10px;
+	/* flex-wrap: wrap; */
+	/* justify-content: center; */
+	/* text-decoration: none; */
 }
 
 /* Teams */
@@ -340,7 +358,7 @@ ul {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 14px;
-	line-height: 1.17;
+	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: #ffffff;
 	text-decoration: none;
@@ -351,7 +369,7 @@ ul {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 14px;
-	line-height: 1.17;
+	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
@@ -407,7 +425,6 @@ ul {
 	line-height: 1.36;
 	color: #212121;
 	visibility: hidden;
-	/* display: none; */
 }
 
 .title-poster {
@@ -465,8 +482,7 @@ ul {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: #212121;
-	margin: 20px 0px 4px 0px;
-	padding: 0px 24px;
+	margin: 0px 0px 4px 0px;
 }
 
 .poster-text {
@@ -476,7 +492,6 @@ ul {
 	line-height: 1.87;
 	letter-spacing: 0.03em;
 	color: #757575;
-	padding: 0px 24px;
 }
 
 .projects {
@@ -492,6 +507,7 @@ ul {
 }
 
 .project-card {
+	padding: 20px 24px;
 	border-left: 1px solid #eeeeee;
 	border-right: 1px solid #eeeeee;
 	border-bottom: 1px solid #eeeeee;
